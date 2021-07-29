@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Sample</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="jquery.typeText.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-image: url("https://www.britanniarose.com/images/fabrics/large/1116126.jpg");
+            margin-top: 0;
+        }
+
+        #wrapper {
+            width: 80%;
+            height:800px;
+            background-color:rgb(111, 126, 112);
+            margin:0 auto;
+        }
+        h1 {
+            background-image: url("https://totalwallcovering.com/images/product/linen-texture-zeyf-l.jpg");
+            margin:0 auto;
+            text-align: center;
+            padding:5px;
+            font-size: 2em;
+            display:none;
+        }
+        p {
+            width: 40%;
+            background-image: url("https://totalwallcovering.com/images/product/linen-texture-zeyf-l.jpg");
+            margin:0 auto;
+            text-align: center;
+            padding:10px;
+            font-size:1.2em;
+            display:none;
+        }
+
+        #example1, #example2, #example3, #example4, #example5, #example6 {
+            background-image: url("https://totalwallcovering.com/images/product/linen-texture-zeyf-l.jpg");
+            display:none;
+            width:16%;
+            margin-right: 80px;
+            margin-top: 50px;
+            text-align: center;
+            height:220px;
+        }
+
+        #effect1, #effect2, #effect3, #effect4, #effect5, #effect6 {
+            height:180px;
+        }
+        #btn1, #btn2, #btn3, #btn4, #btn5, #btn6 {
+            height:40px;
+            width:100%;
+        }
+
+        #container1, #container2 {
+            width:90%;
+            text-align: center;
+            margin:0 auto;
+        }
+
+        #div1-1, #div1-2, #div1-3, #div1-4, #div1-5 {
+            float:left;
+            width:20%;
+        } 
+
+        img{
+            width:100%;
+            height:auto;
+        }
+
+        #div2-1 {
+            background-color: rgba(114, 81, 10, 0.651);
+            color:snow;
+            width:40%;
+            height:25%;
+            position:relative;
+        }
+
+        #div3-1 {
+            background-color:rgba(80, 74, 47, 0.7);
+            color:snow;
+            width:25%;
+            height:15%;
+            margin:0 auto;
+            text-align:center;
+        }
+
+       
+        #windowSize {
+            float:right;
+            background-color: rgb(229, 226, 226);
+        }
+
+        
+
+        
+        .bar1, .bar2, .bar3, .bar4, .bar5, .bar6 {
+            width: 80%;
+            height: 15%;
+            margin:0 auto;
+        }
+        .bar1 {
+            background-color: rgba(5, 82, 85, 0.8);
+        }
+
+        .bar2 {
+            background-color: rgba(5, 82, 85, 0.70);
+        }
+
+        .bar3 {
+            background-color:rgba(5, 82, 85, 0.55);
+        }
+        .bar4{
+            background-color:rgba(5, 82, 85, 0.40);
+        }
+        .bar5 {
+            background-color:rgba(5, 82, 85, 0.25);
+        }
+        .bar6 {
+            background-color:rgba(5, 82, 85, 0.1);
+        }
+
+        #div4-1, #div6-1 {
+            background-color: brown;
+            color:white;
+            width: 50%;
+            height: 50%;
+            margin:0 auto;
+            position: relative;
+            top: 22%;
+            left: 2%;
+            padding-top: 10%;
+            border-radius: 10px;
+        }
+
+        #div4-1{
+            background-color: teal;
+        }
+
+
+
+
+        footer {
+            background-color: rgba(19, 59, 37, 0.322);
+            width:80%;
+            text-align: center;
+            margin:0 auto;
+            padding: 20px;
+            color:white;
+        }
+
+        @media (max-width:1050px){
+            h1{
+                font-size: 3vw;
+                padding:2px;
+            }
+            p {
+                width:80%;
+                padding:1px;
+                font-size:2vw;
+            }
+
+            #example1, #example2, #example3, #example4, #example5, #example6 {
+                width:25%;
+                margin-right: 20px;
+                margin-top: 50px;
+                height:190px;
+            }
+
+            #effect1, #effect2, #effect3, #effect4, #effect5, #effect6 {
+                height:155px;
+            }
+            #btn1, #btn2, #btn3, #btn4, #btn5, #btn6 {
+                height:35px;
+                width:100%;
+                font-size:1.5vw;
+            }
+	    }
+
+        @media (max-width:500px){
+            #wrapper {
+                height:1750px;
+            }
+            p {
+                font-size:4vw;
+            }
+            #example1, #example2, #example3, #example4, #example5, #example6 {
+                width:80%;
+                margin-right: 10px;
+                margin-top: 30px;
+                height:220px;
+            }
+
+            #effect1, #effect2, #effect3, #effect4, #effect5, #effect6 {
+                height:180px;
+            }
+            #btn1, #btn2, #btn3, #btn4, #btn5, #btn6 {
+                height:40px;
+                width:100%;
+                font-size:4vw;
+            }
+          
+
+        }
+    
+    </style>
+</head>
+<body onresize="myFunction();">
+
+    <div id="windowSize"></div>
+    <div id="wrapper">       
+        <h1 id="box">jQuery is fun!</h1>
+        
+        <div class="print">
+            <p>
+                jQuery is a lightweight JavaScript library.
+                You can do amazing things with jQuery by writing simple codes.
+                Now let's experience the magic of jQuery below.
+            </p>
+        </div>
+
+        <div id="container1">
+
+            <div id="example1">
+                <div id="effect1">
+                    <div id="div1-1"> <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png">
+                    </div>
+                    <div id="div1-2"> <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png">
+                    </div>
+                    <div id="div1-3"> <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png">
+                    </div>
+                    <div id="div1-4"> <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png">
+                    </div>
+                    <div id="div1-5"> <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png"><br>
+                                      <img src="https://openclipart.org/image/800px/svg_to_png/217438/shadowman_hand_up.png">
+                    </div>
+
+                </div>
+                <button id="btn1">click to fade-toggle people</button><br>
+            </div>
+
+            <div id="example2">
+                    <div id="effect2">
+                        <div id="div2-1">Animate<br>Me</div>
+                    </div>
+                    <button id="btn2">click to animate rectangle
+                    </button><br>
+            </div>
+
+            <div id="example3">
+                    <div id="effect3">
+                        <div id="div3-1">Hello</div>
+                    </div>
+                    
+                    <button id="btn3" onclick="clickCount();">click to toggle size up and size down</button><br>
+            </div>
+
+        </div>
+
+        <div id="container2">
+
+                <div id="example4">
+                    <div id="effect4">
+                        <div id="div4-1">Drag <br> Me</div>
+                    </div>
+                    <button id="btn4">use mouse to drag the above content</button><br>
+                </div>
+    
+                <div id="example5">
+                        <div id="effect5">
+                            <div id="div5-1"></div>
+                            <div id="div5-2"></div>
+                            <div id="div5-3"></div>
+                            <div id="div5-4"></div>
+                            <div id="div5-5"></div>
+                            <div id="div5-6"></div>
+                        </div>
+                        <button id="btn5">click to see bar sliding</button><br>
+                </div>
+    
+                <div id="example6">
+                        <div id="effect6">
+                            <div id="div6-1" onmouseover="rotateDiv6();">Rotate <br> Me</div>
+                        </div>
+                        <button id="btn6">mouse over the above content to see rotation</button><br>
+                </div>
+    
+            </div>
+    </div>
+    <footer>
+        JavaScript &amp; jQuery Sample
+    </footer>
+
+
+
+
+    <script>
+      
+        //-------------------------------------------------------------------------------------------
+        // display window size on the top-right corner of the screen for responsive design
+        var width = window.outerWidth;
+        var height =  window.outerHeight;
+        document.getElementById("windowSize").innerHTML = width + "x" + height;
+        function myFunction(){
+            var width = window.outerWidth;
+            var height =  window.outerHeight;
+            document.getElementById("windowSize").innerHTML = width + "x" + height;
+        }
+        
+        
+
+        //-------------------------------------------------------------------------------------------
+        //the following codes is to create an animated header with the text content "JQuery is fun!"
+        var theBox = $("#box");
+        
+        $(document).ready(function(){
+            runHeaderAnimation();
+        });
+        
+        function runHeaderAnimation(){
+            $("#box").css("display","block");
+            theBox.animate({
+                height:'3%',
+                width:'10%',
+            },500);
+            theBox.animate({
+                height:'4%',
+                width:'20%',
+            },500);
+            theBox.animate({
+                height:'6%',
+                width:'50%',
+            },500);
+        }
+
+        //------------------------------------------------------------------------------------------
+        //the following is to create typewritter effect with some text content.
+        //an external plug-in with the file name "jquery.typeText.min.js" is linked.
+        function typewritter(){
+            $("p").css("display", "block");
+            $(".print").typeText({
+                typeSpeed:50,
+                lineWait:1000,
+                //then:function(){}
+            });
+            }
+        //set typewritter part to be executed 3 seconds after the whole page is ready
+        //the purpose is to display typewritter effect after the header has completed its animation
+        setTimeout(typewritter, 1000);
+
+        //-------------------------------------------------------------------------------------------
+        //setTimeout 15.5 seconds to display 6 example panels
+        //the purpose is to display this part after the header animation and typewritter have completed their animation. 
+        $(document).ready(function(){
+            setTimeout(function(){             
+            $("#example1").fadeIn(5000).css("display","inline-block")},1000);
+            setTimeout(function(){  
+            $("#example2").fadeIn(5000).css("display","inline-block")},1000);
+            setTimeout(function(){  
+            $("#example3").fadeIn(5000).css("display","inline-block")},1000);
+            setTimeout(function(){  
+            $("#example4").fadeIn(5000).css("display","inline-block")},1000);
+            setTimeout(function(){  
+            $("#example5").fadeIn(5000).css("display","inline-block")},1000);
+            setTimeout(function(){  
+            $("#example6").fadeIn(5000).css("display","inline-block")},1000);
+        });
+        //------------------------------------------------------------------------------------------
+        //click to show effect 1: fadeToggle people
+        //five divs will fade in and out in different timing for visual effect
+        $("#btn1").click(function(){
+                $("#div1-1").fadeToggle(1000);
+                $("#div1-2").fadeToggle(2000);
+                $("#div1-3").fadeToggle(3000);
+                $("#div1-4").fadeToggle(4000);
+                $("#div1-5").fadeToggle(5000);
+
+        });
+
+        //------------------------------------------------------------------------------------------
+        //click to show effect 2: animate rectangle
+        var effect2 = $("#div2-1");
+        var countMe = 0;
+        var run = true;
+        //count the number of mouse click
+        //if it's odd number, run the function runRectangleAnimation() to animate the rectangle
+        //if it's even number, use stop() method to stop the animation
+        $("#btn2").click(function(){
+            countMe++;
+            if (countMe%2 == 0){
+                effect2.stop(true,true);
+                effect2.text("Animate Me");
+            } else{
+                runRectangleAnimation();
+            }
+        });
+        //this function is to animation the rectangle
+        function runRectangleAnimation(){
+            if (run == true) {
+            effect2.animate({width:'40%',height:'10%',left:'60%'});
+            effect2.animate({width:'10%',height:'35%',top:'65%'});
+            effect2.animate({width:'35%',height:'10%',left:'0px'});
+            effect2.animate({width:'40%',height:'25%',top:'0px'});
+            effect2.text("Thank you");
+            runRectangleAnimation();
+            }
+        }
+
+        //---------------------------------------------------------------------------------------
+        //click to show effect 3: toggle size up and down on rectangle and text
+        var effect3 = $("#div3-1");
+
+        //declare the size down function runSizeDown()
+        function runSizeDown(){
+            effect3.animate({fontSize:'1vw'});
+            effect3.animate({width:'25%',height:'15%'});
+            effect3.animate({paddingTop:'5px'});
+        }
+        //declare the size up function runSizeUp()
+        function runSizeUp(){
+            effect3.animate({width:'100%',height:'100%'});
+            effect3.animate({fontSize:'5vw'});
+            effect3.animate({paddingTop:'30px'});
+        }
+        //count the number of mouse click
+        //if the count number is odd, run the size up function runSizeUp()
+        //if the count number is even, run the size down function runSizeDown()
+        var count=0;
+        function clickCount(){
+            count++;
+            if (count%2 == 0){
+                runSizeDown();
+            } else{
+                runSizeUp();
+            }
+        }
+
+        //---------------------------------------------------------------------------------------
+        //effect 4: draggable item
+        //the jQuery UI plug in is used as an external plug in
+        //a CDN link is used to enable the draggable effect
+
+        $(document).ready(function(){
+            $("#div4-1").draggable();
+        });
+
+        
+
+        //--------------------------------------------------------------------------------------
+        //click to show effect 5: sliding bars
+
+        var effect5 = $("#effect5");
+       /* var div5_4 = "<div></div>";
+        var div5_5 = "<div></div>";
+        var div5_6 = document.createElement("div");*/
+
+        //the bars are added in this section by calling runAddBars() function after the html file is loaded
+        $(document).ready(function(){
+            runAddBars();
+        })
+        //animate the bars by calling runSlidingBarsUp() then runSlidingBarsDown()
+        //loop it 3 times for visual effect
+        $("#btn5").click(function(){
+            for (var i=0; i<3; i++){
+            runSlidingBarsUp();
+            runSlidingBarsDown()
+            }    
+        });
+        //declare runAddBars() function
+        function runAddBars() {
+            $("#div5-1").delay(15500).fadeIn(5000).addClass("bar1");
+            $("#div5-2").delay(15500).fadeIn(5000).addClass("bar2");
+            $("#div5-3").delay(15500).fadeIn(5000).addClass("bar3");
+            $("#div5-4").delay(15500).fadeIn(5000).addClass("bar4");
+            $("#div5-5").delay(15500).fadeIn(5000).addClass("bar5");
+            $("#div5-6").delay(15500).fadeIn(5000).addClass("bar6");
+        }
+        //declare runSlidingBarsUp() function
+        function runSlidingBarsUp(){
+            $("#div5-1").slideUp();
+            $("#div5-2").slideUp();
+            $("#div5-3").slideUp();
+            $("#div5-4").slideUp();
+            $("#div5-5").slideUp();
+            $("#div5-6").slideUp();
+        }
+        //declare runSlidingBarsDown() function
+        function runSlidingBarsDown() {
+            $("#div5-6").slideDown();
+            $("#div5-5").slideDown();
+            $("#div5-4").slideDown();
+            $("#div5-3").slideDown();
+            $("#div5-2").slideDown();
+            $("#div5-1").slideDown();
+        }
+
+        //---------------------------------------------------------------------
+        //click to show effect 6: rotate content on mouseover event
+        var x,n=0,rotINT;
+
+        //declear function rotateDiv6() on mouseover event for div6-1, use setInterval() to repeat rotating
+        function rotateDiv6(){
+            x=document.getElementById("div6-1");
+            clearInterval(rotINT);
+            rotINT=setInterval("startRotate()",10);
+        }
+
+        //declear function startRotate() to start rotating div6-1
+        //and use if statement to stop rotating after div6-1 rotated 180 degree by using clearInterval() method
+        function startRotate(){
+            n=n+1;
+            x.style.transform="rotate(" + n + "deg)";
+            if (n==180 || n==360){
+                clearInterval(rotINT);
+                if (n==360){
+                    n=0;
+                }
+            }
+        }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+    
+</body>
+</html>
