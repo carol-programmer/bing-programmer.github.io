@@ -1,0 +1,109 @@
+main{
+	color:white;
+	margin-top: 0;
+	text-align: center;
+ }
+main #section-1 {
+	display:flex;
+	justify-content: space-around;
+	background:#5d9ebf;
+}
+
+main #section-1 img {
+	 display:inline-block;
+	 width:20%;
+	 height:200px;
+ }
+#section-2 div{
+	padding-top:3%;
+	padding-bottom:5%;
+}
+
+main section p {
+	background:rgb(206, 136, 7);
+	margin:0;
+	padding:10px;
+	font-weight: bold;
+	text-shadow:2px 2px 2px black;
+ }
+#div {
+	background:rgb(77, 114, 138);
+	display:flex;
+	justify-content: space-around;
+	padding:20px;
+	background-image: url("../images/maple_leaf_transparent.png");
+	background-blend-mode: multiply;
+}
+main ul{
+	margin-top:0;
+	list-style: none;
+	color:ghostwhite;
+	background:rgb(187, 129, 20);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	/*box-shadow: 5px 5px 10px #000;*/
+	width:30%;
+	padding-left:0;
+	box-shadow: 5px 5px 10px rgb(4, 4, 31);
+}
+main li{
+	padding:10px;
+	transition:padding 1s;
+	text-shadow:2px 2px 2px black;
+	font-size:0.8vw;
+	height:20%;
+}
+
+.ul_imgDiv {
+	display:flex;
+	width:95%;
+	margin-right:2%;
+}
+.imgDiv {
+	width:100%;
+	height:95%;
+	background-color:rgba(172, 115, 30, 0.527);
+	box-shadow: 5px 5px 10px rgb(4, 4, 31);
+}
+
+/*
+main ul {
+	transition: transform 1s;
+}
+main ul:hover {
+	box-shadow: 5px 5px 8px rgb(68, 52, 52);
+	background-color: rgba(105, 78, 39, 0.616);
+    -webkit-transform: rotateY(360deg); // Safari 
+    transform: rotate(360deg);
+}*/
+
+
+@keyframes animate-img {
+	0% {
+		transform: translate(0,0);
+	}
+
+	20% {
+		transform: translate(10px, 0);
+	}
+	40% {
+		transform: translate(20px, 0);
+	}
+
+	60% {
+		transform: translate(10px, 0);
+	}
+	90% {
+		transform: translate(0,0);
+	}
+}
+
+main #section-1 img {
+	animation: animate-img 5s infinite;
+}
+
+
+
+
+
+

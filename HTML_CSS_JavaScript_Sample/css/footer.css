@@ -1,0 +1,12 @@
+footer {
+	clear:left;
+	text-align: center;
+	background-color:#5d9ebf;
+	color:white;
+	padding-top:20px;
+	padding-bottom:5px;
+ }
+
+footer h5 {
+	margin-top:0;
+}

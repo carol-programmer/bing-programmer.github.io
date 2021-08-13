@@ -1,0 +1,48 @@
+main{
+    color:white;
+    background:#5591af;
+    margin-top: 0; 
+    text-align: center;
+    padding-top:10px;
+	background-image: url("../images/maple_leaf_transparent.png");
+	background-blend-mode: multiply;
+ }
+main section {
+    width:80%;
+    margin:10px auto;
+    margin-bottom: 0;
+    background:#4e86a3;
+}
+main h2{
+    margin:0;
+    padding:10px;
+    background: rgb(48, 105, 128);
+}
+
+main form {
+    padding: 20px;
+    display:block;
+    width:60%;
+    margin:0 auto;
+    background:rgb(77, 114, 138);
+}
+
+#from, #to, #depart, #return, #people, #class {
+    width:60%;
+    height:35px;
+    background:rgb(55, 144, 167);
+    box-shadow: 2px 2px rgb(68, 77, 82);
+    margin:25px auto;
+}
+
+#plane {
+    font-size: 200%;
+}
+
+#submit {
+    padding:5px 10px;
+    background:rgb(177, 17, 17);
+    color:white;
+    border-radius: 10px;
+    font-size: 105%;
+}

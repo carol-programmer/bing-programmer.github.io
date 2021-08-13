@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<meta charset="utf-8">
+		<title>Flight</title>
+		<link rel="stylesheet" href="css/fa-solid.min.css"><!-- loads actual fonts-->
+		<link rel="stylesheet" href="css/fontawesome.min.css"><!-- base library, apply all the classes  -->
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/flight.css">
+	</head>
+
+	<body>
+		<!-- header will keep consistent through the website-->
+		<header>
+				<div>
+					<h2><img  src="images/travel_agency_logo.png" width="10%" height="50"> Welcome to Travel Experts</h2>
+					<h3><i class="fas fa-phone" id="phoneicon"></i> Call Us: 1-800-765-4321</h3>	
+				</div>	
+				<nav>
+					<ul>
+						<li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+						<li><i class="fas fa-image"></i><a href="sites.html">Sites</a></li>
+						<li><i class="fas fa-plane"></i><a href="flight.html">Flight</a></li>
+						<li><i class="fas fa-phone"></i><a href="contact.html">Contact</a></li>
+						<li><i class="fas fa-registered"></i><a href="register.html">Register</a></li>
+					</ul>
+				</nav>
+		</header>
+
+		
+		<main >
+			<section>
+				<h2>Book the Flight</h2>
+				<form action="" method="post" align="center">
+					<div id="from">
+						From 	<select name="departure">
+									<option value="calgary">Calgary</option>
+									<option value="edmonton">Edmonton</option>
+									<option value="halifax">Halifax</option>
+									<option value="montreal">Montreal</option>
+									<option value="ottawa">Ottawa</option>
+									<option value="quebec">Quebec</option>
+									<option value="saskatoon">Saskatoon</option>
+									<option value="toronto">Toronto</option>
+								</select><br><br>
+					</div>
+					<div id="to">
+						To		<select name="departure">
+									<option value="calgary">Calgary</option>
+									<option value="edmonton">Edmonton</option>
+									<option value="halifax">Halifax</option>
+									<option value="montreal">Montreal</option>
+									<option value="ottawa">Ottawa</option>
+									<option value="quebec">Quebec</option>
+									<option value="saskatoon">Saskatoon</option>
+									<option value="toronto">Toronto</option>
+								</select><br><br>
+					</div>
+					<div id="depart">
+						Depart  <input type="date"> 
+					</div>
+					<div id="return">
+						Return <input type="date"><br><br>
+					</div>
+					<div id="people">
+						Adults  <select name="adults">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+								</select>
+						Seniors  <select name="seniors">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+								</select>
+						Children  <select name="children">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+								</select><br><br>
+					</div>
+					<div id="class">
+						Class  <select name="class">
+								<option value="economy">Economy</option>
+								<option value="business">Business</option>
+								<option value="first">First</option>
+							</select>
+					</div><br><br>
+					<marquee behavior="slide" direction="right" loop="10"><i id="plane" class="fas fa-plane"></i></marquee><br><br><br><br>
+					<input type="submit" name="submit" value="Submit" id="submit">
+					
+				</form>
+			</section>	
+		</main>
+		<!-- footer will keep consistent through the website-->
+		<footer>
+			<h5>Copyright &copy; Travel Experts 2018</h5>
+		</footer>
+	
+	</body>
+<HTML>
