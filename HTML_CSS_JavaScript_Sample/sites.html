@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<meta charset="utf-8">
+		<title>Sites</title>
+		<link rel="stylesheet" href="css/fa-solid.min.css"><!-- loads actual fonts-->
+		<link rel="stylesheet" href="css/fontawesome.min.css"><!-- base library, apply all the classes  -->
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/sites.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+//--------------create imgArray, textArray, a for loop for content array (for <tr>). This is to prepare for insert content into <table> </table> in html-------------------------------------------------------------------------------------------------------------------------------------------------------------
+				var content =[];
+				var imgArray = ["images/travel_picture_1.jpg", "images/travel_picture_2.jpg","images/travel_picture_3.jpg", "images/travel_picture_4.jpg", "images/travel_picture_5.jpg", "images/travel_picture_6.jpg", "images/travel_picture_7.jpg", "images/travel_picture_8.jpg"];
+				var textArray = new Array();
+				textArray[0] = "Hover mouse over picture to see color change.";
+				textArray[1] = "Hover mouse over picture to see color change.";
+				textArray[2] = "Hover mouse over picture to see color change.";
+				textArray[3] = "Hover mouse over picture to see color change.";
+				textArray[4] = "Hover mouse over picture to see color change.";
+				textArray[5] = "Hover mouse over picture to see color change.";
+				textArray[6] = "Hover mouse over picture to see color change.";
+				textArray[7] = "Hover mouse over picture to see color change.";
+
+				for(var i=0;i<imgArray.length;i++){
+					content[i] = "<tr><td><img src='"  +  imgArray[i] +  "' width='300' height='200' onclick='myFunction(" +i +");'></td>"+
+							"<td><p align='left' style='margin-left:5px;'>" +  textArray[i]  +  "</p></td></tr>";
+				}
+//--------------open window, setTimeout 3 sec for closing window---------------------------------------------------------------------------------------------------------------------------------
+				var openWindow;
+				function myFunction(img) {
+
+						switch (img) {
+							case 0:
+								openWindow = window.open("http://vancouver.ca/parks-recreation-culture/stanley-park.aspx");
+								setTimeout (closeWindow, 3000);
+								break;
+							case 1:
+								openWindow = window.open("https://www.tripadvisor.ca/Attractions-g154910-Activities-Banff_National_Park_Alberta.html");
+								setTimeout (closeWindow, 3000);
+								break;
+							case 2:
+								openWindow = window.open("https://www.tripadvisor.ca/Attractions-g154910-Activities-Banff_National_Park_Alberta.html");
+								setTimeout (closeWindow, 3000);
+							break;
+							case 3:
+								openWindow = window.open("https://www.tripadvisor.ca/Attractions-g154910-Activities-Banff_National_Park_Alberta.html");
+								setTimeout (closeWindow, 3000);
+								break;
+							case 4:
+								openWindow = window.open("https://www.tripadvisor.ca/Attractions-g154910-Activities-Banff_National_Park_Alberta.html");
+								setTimeout (closeWindow, 3000);
+								break;
+							case 5:
+								openWindow = window.open("https://www.tripadvisor.ca/Attractions-g154910-Activities-Banff_National_Park_Alberta.html");
+								setTimeout (closeWindow, 3000);
+								break;
+							case 6:
+								openWindow = window.open("https://www.tripadvisor.ca/Attractions-g154910-Activities-Banff_National_Park_Alberta.html");
+								setTimeout (closeWindow, 3000);
+								break;
+							case 7:
+								openWindow = window.open("https://www.tripadvisor.ca/Attractions-g154910-Activities-Banff_National_Park_Alberta.html");
+								setTimeout (closeWindow, 3000);
+								break;
+							case 8:
+								openWindow = window.open("https://www.tripadvisor.ca/Attractions-g154910-Activities-Banff_National_Park_Alberta.html");
+								setTimeout (closeWindow, 3000);
+						}
+				}
+
+				function closeWindow() {
+					openWindow.close();
+				}
+//--------------animate text using javascript-------------------------------------------------------------------------------------------------------------------
+			/*	var textOneleft = 700;
+				var textTwoleft = 1000;
+				var switchDirection = false;
+
+				function textMoveInterval() {
+					window.setInterval(moveText, 5);
+				}
+
+				function moveText() {
+					var textOne = document.getElementById("textOne");
+					var textTwo = document.getElementById("textTwo");
+
+					if (switchDirection == false){
+						textOneleft++;
+						textTwoleft--;
+						if (textOneleft == 1000){
+							switchDirection = true;
+						}
+					} else {
+						textOneleft--;
+						textTwoleft++;
+						if (textOneleft == 700){
+							switchDirection = false;
+						}
+					}
+					textOne.innerHTML = "<p style='position:absolute;left:" + textOneleft + "px;background:#2c4f87;'>Travel Experts</p>";
+					textTwo.innerHTML = "<p style='position:absolute;left:" + textTwoleft + "px;top:20px;background:#2c4f87;'>Travel Experts</p>";
+
+
+				}*/
+//--------------animate text using jQuery----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+			$(document).ready(function(){
+				moveTextJquery();
+			});
+
+			function moveTextJquery() {
+				$("#p1").animate({left:'60%'},2000);
+				$("#p2").animate({left:'30%'},2000);
+				$("#p1").animate({left:'30%'},2000);
+				$("#p2").animate({left:'60%'},2000);
+				moveTextJquery();
+			}
+
+
+
+//--------------mouse over text to bounce away text--------------------------------------------------------------------------------------------------------------------------------------------
+				var textOne = document.getElementById("textOne");
+				var textTwo = document.getElementById("textTwo");
+				textOne.addEventListener('mouseover', function(){mouseOver(one);});
+				textTwo.addEventListener('mouseover', function(){mouseOver(two);});
+				function mouseOver(text) {
+					switch (text) {
+						case one:
+							textOne.innerHTML = "<p style='position:absolute;left:" + (textOneleft+200) + "px;background:#2c4f87;'>Travel Experts</p>";
+						case two:
+							textTwo.innerHTML = "<p style='position:absolute;left:" + (textTwoleft+200) + "px;top:20px;background:#2c4f87;'>Travel Experts</p>";
+					}
+				}
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------
+		</script>
+		<style>
+			#textOne, #textTwo {
+				color:white;
+			}
+			main img {
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+
+	<!--<body onload="textMoveInterval();">-->
+		<body>
+		<header>
+				<div>
+					<h2><img  src="images/travel_agency_logo.png" width="10%" height="80%"> Welcome to Travel Experts</h2>
+					<h3><i class="fas fa-phone" id="phoneicon"></i> Call Us: 1-800-765-4321</h3>
+				</div>
+				<nav>
+					<ul>
+						<li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+						<li><i class="fas fa-image"></i><a href="sites.html">Sites</a></li>
+						<li><i class="fas fa-plane"></i><a href="flight.html">Flight</a></li>
+						<li><i class="fas fa-phone"></i><a href="contact.html">Contact</a></li>
+						<li><i class="fas fa-registered"></i><a href="register.html">Register</a></li>
+					</ul>
+				</nav>
+		</header>
+		<!--<img src="images/star.svg" id="star" width="1.5%" height="1%">-->
+
+		<div id="textOne" style="background: #044f7ac0;position:relative;"><p id="p1" style="position:absolute;left:30%;background:#2c4f87;">Travel Experts</p></div>
+		<div id="textTwo" style="background: #044f7ac0;position:relative;"><p id="p2" style="position:absolute;left:60%;top:20px;background:#2c4f87;">Travel Experts</p></div>
+
+		<main style="display:flex;justify-content:space-around;padding-top:55px;">
+
+				<section id="section_1" style="margin-left:10%;">
+
+				</section>
+
+				<section id="section_2" style="margin-right:10%;">
+
+				</section>
+
+		</main>
+		<!-- footer will keep consistent through the website-->
+		<footer>
+			<h5>Copyright &copy; Travel Experts 2018</h5>
+		</footer>
+		<script>
+//-----------insert content array into section_1 and section_2 between <table> </table> tag-------------------------------------------------------------------------------------------------------------------------
+			document.getElementById("section_1").innerHTML = "<table>" + content[0] + content[1]+content[2]+content[3]+"</table>";
+			document.getElementById("section_2").innerHTML = "<table>" + content[4] + content[5]+content[6]+content[7]+"</table>";
+
+		</script>
+	</body>
+<HTML>

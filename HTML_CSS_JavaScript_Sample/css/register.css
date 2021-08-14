@@ -1,0 +1,59 @@
+main{
+    color:white;
+    background:#5591af;
+    margin-top: 0; 
+    text-align: center;
+    padding-top:10px;
+	background-image: url("../images/maple_leaf_transparent.png");
+	background-blend-mode: multiply;
+ }
+main section {
+    width:80%;
+    margin:10px auto;
+    margin-bottom: 0;
+    background:#4e86a3;
+}
+main h2{
+    margin:0;
+    padding:10px;
+    background: rgb(48, 105, 128);
+    text-shadow: 2px 2px 5px #000;
+}
+main form {
+    padding: 20px;
+    display:block;
+    width:60%;
+    margin:0 auto;
+    background:rgb(77, 114, 138);
+    text-align: left;
+}
+ #btn_to_top {
+     text-decoration:none;
+    color:black;
+ }
+
+ @keyframes animate-person {
+	0% {
+        transform:rotate(0deg);
+	}
+
+	20% {
+        transform:rotate(2deg);
+	}
+	40% {
+        transform:rotate(5deg);
+	}
+	60% {
+        transform:rotate(2deg);
+	}
+
+	90% {
+        transform:rotate(0deg);
+	}
+}
+
+#person {
+    font-size:120%;
+    animation: animate-person 0.3s infinite;
+    transform-origin:bottom;
+}

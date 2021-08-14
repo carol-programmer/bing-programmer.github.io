@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #4e86a3;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #5d9ebf;
+}
+header div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+
+header h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+nav ul {
+  background-color: #4e86a3;
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+nav li {
+  display: flex;
+  overflow: hidden;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  /*text-shadow: 2px 2px #000;*/
+  padding: 5px 5px;
+  position: relative;
+  z-index: 10;
+  transition: color 0.5s;
+  text-shadow: 1px 1px 2px black;
+}
+nav i {
+  color: #fff;
+  transform: scale(2.5) rotate(10deg) translate(3px, 5px); /* adjust px to make the icons move higher to be aligned with text*/
+  opacity: 0.2;
+  transition: all 1s ease-out;
+}
+nav li:hover i {
+  transform: rotate(0) scale(3.5) translate(3px, 8px);
+  opacity: 0.6;
+}
+
+nav li:hover a {
+  color: #ffc404;
+  font-weight: bold;
+}
+
+@keyframes animate-phonenumber {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(0, 1px);
+  }
+  40% {
+    transform: translate(0, 2px);
+  }
+
+  60% {
+    transform: translate(0, 1px);
+  }
+  90% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes animate-phoneicon {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(20deg);
+  }
+
+  90% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes animate-h2 {
+  0% {
+    color: white;
+  }
+
+  20% {
+    color: blue;
+  }
+  40% {
+    color: red;
+  }
+  60% {
+    color: yellow;
+  }
+
+  90% {
+    color: white;
+  }
+}
+
+header div h2 {
+  animation: animate-h2 5s infinite;
+}
+header div h3 {
+  animation: animate-phonenumber 0.5s infinite;
+}
+#phoneicon {
+  animation: animate-phoneicon 1s infinite;
+}
