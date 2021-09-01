@@ -1,0 +1,22 @@
+2021-06-09 10:44:17.168 -06:00 [FTL] Error occured in UserManager.Authenticate: Incorrect syntax near the keyword 'FROM'.
+2021-06-09 10:44:56.824 -06:00 [FTL] Error occured in UserManager.Authenticate: Incorrect syntax near the keyword 'FROM'.
+2021-06-09 10:47:22.783 -06:00 [FTL] Error occured in UserManager.Authenticate: Invalid column name 'ID'.
+Invalid column name 'Product'.
+2021-06-09 10:47:30.577 -06:00 [FTL] Error occured in UserManager.Authenticate: Invalid column name 'ID'.
+Invalid column name 'Product'.
+2021-06-09 14:11:03.964 -06:00 [INF] andy passed authentication
+2021-06-09 14:11:50.517 -06:00 [INF] andy passed authentication
+2021-06-09 14:15:55.214 -06:00 [INF] andy passed authentication
+2021-06-09 14:17:44.803 -06:00 [INF] andy passed authentication
+2021-06-09 19:28:38.722 -06:00 [FTL] Error occured in UserManager.Authenticate: Invalid value for key 'attachdbfilename'.
+2021-06-09 19:29:41.411 -06:00 [FTL] Error occured in UserManager.Authenticate: Invalid value for key 'attachdbfilename'.
+2021-06-09 19:44:28.717 -06:00 [FTL] Error occured in UserManager.Authenticate: Keyword not supported: 'initialcatalog'.
+2021-06-09 19:44:33.036 -06:00 [FTL] Error occured in UserManager.Authenticate: Keyword not supported: 'initialcatalog'.
+2021-06-09 19:47:18.227 -06:00 [FTL] Error occured in UserManager.Authenticate: Cannot open database "RetailSecurity" requested by the login. The login failed.
+Login failed for user 'MYPC\Admin'.
+2021-06-09 19:48:07.881 -06:00 [FTL] Error occured in UserManager.Authenticate: Cannot open database "RetailSecurity" requested by the login. The login failed.
+Login failed for user 'MYPC\Admin'.
+2021-06-09 19:49:26.121 -06:00 [FTL] Error occured in UserManager.Authenticate: Keyword not supported: 'data sourcer'.
+2021-06-09 19:50:44.365 -06:00 [FTL] Error occured in UserManager.Authenticate: Keyword not supported: 'data sourcer'.
+2021-06-09 19:54:10.865 -06:00 [FTL] Error occured in UserManager.Authenticate: Keyword not supported: 'data sourcer'.
+2021-06-09 20:22:14.736 -06:00 [FTL] Error occured in UserManager.Authenticate: Invalid value for key 'attachdbfilename'.

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<LoginAuthentication.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h1>Products</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<table class="table table-bordered table-striped" asp-action="Index">
+    <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Supplier ID</th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.ID)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Quantity)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Price)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SupplierID)
+    </td>
+    <td>
+        <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+        <a asp-action="DeletePage" asp-route-id="@item.ID">Delete</a>
+    </td>
+</tr>
+    }
+</table>
+

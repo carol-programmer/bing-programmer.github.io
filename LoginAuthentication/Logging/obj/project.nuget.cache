@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "fEfF7u7onZkbuWk32J8dqazin2NPuO/TSpS2GSSHp65xtx3aZQTTsLfdfKWrni4vzlkvMko+16kTWBThwnmaww==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\Looking for Job\\Carol\\SAIT\\Back to OOSD\\practicum\\demo project for interview\\C# Dot Net\\LoginAuthentication\\Logging\\Logging.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\serilog\\2.10.1-dev-01248\\serilog.2.10.1-dev-01248.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\serilog.sinks.file\\5.0.0-dev-00862\\serilog.sinks.file.5.0.0-dev-00862.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\serilog.sinks.rollingfile\\3.3.1-dev-00767\\serilog.sinks.rollingfile.3.3.1-dev-00767.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.io\\4.1.0\\system.io.4.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.io.filesystem\\4.0.1\\system.io.filesystem.4.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.io.filesystem.primitives\\4.0.1\\system.io.filesystem.primitives.4.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.reflection\\4.1.0\\system.reflection.4.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.reflection.primitives\\4.0.1\\system.reflection.primitives.4.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.runtime\\4.1.0\\system.runtime.4.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.runtime.handles\\4.0.1\\system.runtime.handles.4.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.runtime.interopservices\\4.1.0\\system.runtime.interopservices.4.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.text.encoding\\4.0.11\\system.text.encoding.4.0.11.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.text.encoding.extensions\\4.0.11\\system.text.encoding.extensions.4.0.11.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.threading.tasks\\4.0.11\\system.threading.tasks.4.0.11.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.threading.timer\\4.0.1\\system.threading.timer.4.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

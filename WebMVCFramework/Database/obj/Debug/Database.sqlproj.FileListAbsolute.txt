@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\WebMVCFramework\Database\bin\Debug\Database.dacpac
+C:\Users\Admin\source\repos\WebMVCFramework\Database\bin\Debug\Database.dll
+C:\Users\Admin\source\repos\WebMVCFramework\Database\bin\Debug\Database.pdb
+C:\Users\Admin\source\repos\WebMVCFramework\Database\obj\Debug\Database.sqlprojAssemblyReference.cache
+C:\Users\Admin\source\repos\WebMVCFramework\Database\obj\Debug\Model.xml
+C:\Users\Admin\source\repos\WebMVCFramework\Database\obj\Debug\refactor.xml
+C:\Users\Admin\source\repos\WebMVCFramework\Database\obj\Debug\postdeploy.sql
+C:\Users\Admin\source\repos\WebMVCFramework\Database\obj\Debug\predeploy.sql
+C:\Users\Admin\source\repos\WebMVCFramework\Database\obj\Debug\Database.dll
+C:\Users\Admin\source\repos\WebMVCFramework\Database\obj\Debug\Database.pdb

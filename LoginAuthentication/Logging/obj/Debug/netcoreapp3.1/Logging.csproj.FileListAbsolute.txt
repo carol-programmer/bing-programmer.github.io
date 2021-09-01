@@ -1,0 +1,18 @@
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\LoginAuthentication\Logging\bin\Debug\netcoreapp3.1\Logging.deps.json
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\LoginAuthentication\Logging\bin\Debug\netcoreapp3.1\Logging.dll
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\LoginAuthentication\Logging\bin\Debug\netcoreapp3.1\Logging.pdb
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\LoginAuthentication\Logging\obj\Debug\netcoreapp3.1\Logging.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\LoginAuthentication\Logging\obj\Debug\netcoreapp3.1\Logging.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\LoginAuthentication\Logging\obj\Debug\netcoreapp3.1\Logging.AssemblyInfo.cs
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\LoginAuthentication\Logging\obj\Debug\netcoreapp3.1\Logging.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\LoginAuthentication\Logging\obj\Debug\netcoreapp3.1\Logging.dll
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\LoginAuthentication\Logging\obj\Debug\netcoreapp3.1\Logging.pdb
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\C# Dot Net\LoginAuthentication\Logging\bin\Debug\netcoreapp3.1\Logging.deps.json
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\C# Dot Net\LoginAuthentication\Logging\bin\Debug\netcoreapp3.1\Logging.dll
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\C# Dot Net\LoginAuthentication\Logging\bin\Debug\netcoreapp3.1\Logging.pdb
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\C# Dot Net\LoginAuthentication\Logging\obj\Debug\netcoreapp3.1\Logging.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\C# Dot Net\LoginAuthentication\Logging\obj\Debug\netcoreapp3.1\Logging.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\C# Dot Net\LoginAuthentication\Logging\obj\Debug\netcoreapp3.1\Logging.AssemblyInfo.cs
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\C# Dot Net\LoginAuthentication\Logging\obj\Debug\netcoreapp3.1\Logging.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\C# Dot Net\LoginAuthentication\Logging\obj\Debug\netcoreapp3.1\Logging.dll
+C:\Users\Admin\Documents\Looking for Job\Carol\SAIT\Back to OOSD\practicum\demo project for interview\C# Dot Net\LoginAuthentication\Logging\obj\Debug\netcoreapp3.1\Logging.pdb
